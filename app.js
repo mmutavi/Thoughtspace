@@ -1,0 +1,1 @@
+const $=s=>document.querySelector(s), board=$('#board'),nodesEl=$('#nodes'),sv

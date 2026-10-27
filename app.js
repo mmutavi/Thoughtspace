@@ -1,1 +1,1 @@
-const $=s=>document.querySelector(s), board=$('#board'),nodesEl=$('#nodes'),sv
+const $=s=>document.querySelector(s), board=$('#board'),nodesEl=$('#nodes'),svg=$('#lines');let nodes=[],edges=[],connectMode=false,selected=null,drag=null;

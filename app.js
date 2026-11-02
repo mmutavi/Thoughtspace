@@ -1,2 +1,2 @@
 const $=s=>document.querySelector(s), board=$('#board'),nodesEl=$('#nodes'),svg=$('#lines');let nodes=[],edges=[],connectMode=false,selected=null,drag=null;
-function persist(){localStorage.setItem('thoughtspace-map',JSON.stringify({nodes,edges}));$('#status').textContent='Saved on this device'}function render(){nodesEl.innerHTML='';$('#empty').style.display=nodes.length?'none':'grid';$('#count').textContent
+function persist(){localStorage.setItem('thoughtspace-map',JSON.stringify({nodes,edges}));$('#status').textContent='Saved on this device'}function render(){nodesEl.innerHTML='';$('#empty').style.display=nodes.length?'none':'grid';$('#count').textContent=nodes.length?`${nodes.length} thoughts`:'';const term=$('#search').value.toLowerCase();for(const n of nodes){const 
